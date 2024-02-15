@@ -29,7 +29,9 @@ export async function createNewFile(filename) {
 			afterDifference: null
 		}
 	};
+	if(filename){
+		writeTextFile(savePath, JSON.stringify(jsonData));
+		getFiles();
+	}
 
-	writeTextFile(savePath, JSON.stringify(jsonData));
-	getFiles();
 }

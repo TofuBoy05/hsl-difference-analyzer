@@ -3,23 +3,24 @@
     import FileBar from '$lib/FileBar.svelte'
     import SideBar from "$lib/SideBar.svelte";
     import FileBarAdd from "$lib/FileBarAdd.svelte";
+    import { readTextFile } from "@tauri-apps/api/fs";
+    import { appDataDir } from "@tauri-apps/api/path";
+	import { onMount } from "svelte";
+	import Body from "$lib/Body.svelte";
 
-    
+    onMount(async () => {
+        console.log(await appDataDir())
+    })
 
-    let files = ['file1', 'file2', 'file3']
+
+
 </script>
 
 
-<div class="mt-9 flex">
+<div class="flex w-full"> 
     <SideBar />
-    <div class="flex gap-3 w-full p-5">
-        <div class="flex-grow">
-            <p class="font-bold text-gray-600 text-2xl unselectable">Before</p>
-        </div>
-        
-        <div class="flex-grow">
-            <p class="font-bold text-gray-600 text-2xl unselectable">After</p>
-        </div>
+    <div class="overflow-hidden">
+        <Body />
     </div>
 </div>
 

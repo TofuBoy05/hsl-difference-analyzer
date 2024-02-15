@@ -25,7 +25,7 @@
           <input type="text" bind:value={fileName} placeholder="File name" class="rounded-sm input input-bordered w-full input-sm" />
         <!-- if there is a button in form, it will close the modal -->
         <div class="flex justify-end gap-2 mt-4">
-            <button class="btn btn-sm rounded-md">Close</button>
+            <button type="button" class="btn btn-sm rounded-md" on:click={() => {my_modal_1.close()}}>Close</button>
             <button type="submit" class="btn btn-sm btn-primary rounded-md">Create</button>
         </div>
       </form>
