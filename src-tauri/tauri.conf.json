@@ -7,7 +7,7 @@
     "distDir": "../build"
   },
   "package": {
-    "productName": "multi-sample-stain-treatment-hsl-analyzer",
+    "productName": "Textile Stain Fade Analyzer",
     "version": "0.1.0"
   },
   "tauri": {
@@ -32,6 +32,14 @@
       },
       "path": {
         "all": true
+      },
+      "dialog": {
+        "all": true,
+        "ask": true,
+        "confirm": true,
+        "message": true,
+        "open": true,
+        "save": true
       }
     },
     "bundle": {
@@ -41,6 +49,7 @@
       "deb": {
         "depends": []
       },
+      
       "externalBin": [],
       "icon": [
         "icons/32x32.png",
@@ -58,13 +67,17 @@
         "providerShortName": null,
         "signingIdentity": null
       },
+      
       "resources": [],
       "shortDescription": "",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,
         "digestAlgorithm": "sha256",
-        "timestampUrl": ""
+        "timestampUrl": "",
+        "webviewInstallMode": {
+          "type": "offlineInstaller"
+        }
       }
     },
     "security": {
@@ -78,7 +91,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "Multi-Sample Statistical Package for Textile Stain Treatment Efficacy with HSV/L Differential Analysis",
+        "title": "Textile Stain Fade Analyzer",
         "width": 800
       }
     ]

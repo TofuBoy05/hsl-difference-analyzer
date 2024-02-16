@@ -18,8 +18,9 @@
 
 
 <div class="flex w-full"> 
-    <SideBar />
-    <div class="overflow-hidden">
+    
+        <SideBar />
+    <div class="overflow-hidden w-full">
         <Body />
     </div>
 </div>
