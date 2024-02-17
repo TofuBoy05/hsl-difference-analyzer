@@ -11,6 +11,7 @@
     "version": "0.1.1"
   },
   "tauri": {
+    
     "allowlist": {
       "fs": {
         "scope": [
@@ -96,18 +97,7 @@
         "resizable": true,
         "title": "Textile Stain Fade Analyzer",
         "width": 800,
-        "visible": false,
         "label": "main"
-      },
-      
-      {
-        "width": 1,
-        "height": 1,
-        "decorations": false,
-        "url": "/splashscreen.html",
-        "label": "splashscreen",
-        "transparent": true
-        
       }
     ]
   }
