@@ -66,7 +66,8 @@ let fileDelete;
         <button class="btn bg-red-600 hover:bg-red-700 active:bg-red-700 text-white rounded-md btn-sm" on:click={() => {
             removeFile(path);
             getFiles();
-            currentFile.set(null)
+            currentFile.set(null);
+            fileDelete.close();
         }}>Yes</button>
     </div>
   </div>

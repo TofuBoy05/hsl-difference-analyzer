@@ -37,8 +37,10 @@ export async function createNewFile(filename) {
 		const filesArray = get(files);
 		let names = filesArray.map(obj => obj.name);
 		if(!names.includes(filename + ".hsla")){
-			writeTextFile(savePath, JSON.stringify(jsonData));
-			getFiles();
+			await writeTextFile(savePath, JSON.stringify(jsonData));
+			await getFiles();
+			currentFile.set(filename + '.hsla');
+		} else {
 			currentFile.set(filename + '.hsla');
 		}
 

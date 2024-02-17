@@ -7,11 +7,13 @@
     import { appDataDir } from "@tauri-apps/api/path";
 	import { onMount } from "svelte";
 	import Body from "$lib/Body.svelte";
+    import { invoke } from '@tauri-apps/api/tauri'
 
     onMount(async () => {
         console.log(await appDataDir())
     })
-
+    
+    
 
 
 </script>

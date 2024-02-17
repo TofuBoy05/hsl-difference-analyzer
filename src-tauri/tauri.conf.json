@@ -8,7 +8,7 @@
   },
   "package": {
     "productName": "Textile Stain Fade Analyzer",
-    "version": "0.1.0"
+    "version": "0.1.1"
   },
   "tauri": {
     "allowlist": {
@@ -40,6 +40,9 @@
         "message": true,
         "open": true,
         "save": true
+      },
+      "window": {
+        "startDragging": true
       }
     },
     "bundle": {
@@ -92,7 +95,19 @@
         "height": 600,
         "resizable": true,
         "title": "Textile Stain Fade Analyzer",
-        "width": 800
+        "width": 800,
+        "visible": false,
+        "label": "main"
+      },
+      
+      {
+        "width": 1,
+        "height": 1,
+        "decorations": false,
+        "url": "/splashscreen.html",
+        "label": "splashscreen",
+        "transparent": true
+        
       }
     ]
   }

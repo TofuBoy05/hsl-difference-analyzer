@@ -21,7 +21,7 @@
     <h3 class="font-bold text-lg">New File</h3>
     <p class="py-4">You cannot change the file name after this!</p>
     <div class="">
-        <form method="dialog" on:submit={() => {createNewFile(fileName); currentFile.set(fileName + ".hsla");fileName = ""}}>
+        <form method="dialog" on:submit={() => {createNewFile(fileName); fileName = ""}}>
           <input type="text" bind:value={fileName} placeholder="File name" class="rounded-sm input input-bordered w-full input-sm" />
         <!-- if there is a button in form, it will close the modal -->
         <div class="flex justify-end gap-2 mt-4">
